@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your 3D Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D CANVAS BACKGROUND -->
+    <canvas id="bg3d"></canvas>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="brand">Portfolio</a>
+            <div class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT WRAPPER -->
+    <div class="content-wrapper">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to My Universe</h1>
+                <p class="hero-subtitle">Full Stack Developer | AI/ML Enthusiast | Event Entrepreneur</p>
+                <p class="hero-description">
+                    Crafting intelligent solutions at the intersection of technology and innovation. 
+                    From web development to machine learning, building the future one line of code at a time.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid-container">
+                <div class="card reveal">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-description">HTML, CSS, JavaScript, React, Node.js, Full Stack Solutions</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">AI & Machine Learning</h3>
+                    <p class="card-description">Python, TensorFlow, Scikit-learn, Data Analysis, Neural Networks</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Programming</h3>
+                    <p class="card-description">Java, Python, JavaScript, Prolog, Algorithm Design</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Tools & Platforms</h3>
+                    <p class="card-description">Git, GitHub, VS Code, Google Cloud, Cloud Deployment</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">UI/UX Design</h3>
+                    <p class="card-description">Responsive Design, 3D Effects, Interactive Components</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Data & Analytics</h3>
+                    <p class="card-description">Data Visualization, Statistical Analysis, Business Intelligence</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-container">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/project-bg.jpg" alt="Portfolio Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">Interactive 3D portfolio with particle effects and smooth animations</p>
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/skills-bg.jpg" alt="ML Clustering Model">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ML Clustering Model</h3>
+                        <p class="project-desc">Unsupervised learning project with advanced clustering algorithms</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/experience-bg.jpg" alt="Event Management">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Event Management Platform</h3>
+                        <p class="project-desc">Full-stack solution for organizing and managing live events</p>
+                        <div class="project-tags">
+                            <span class="tag">MERN</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/hero-bg.jpg" alt="N-Queens Algorithm">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">N-Queens Algorithm</h3>
+                        <p class="project-desc">Advanced algorithmic solution with visualization</p>
+                        <div class="project-tags">
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/leadership-bg.jpg" alt="Leadership Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Leadership Dashboard</h3>
+                        <p class="project-desc">E-Cell initiatives tracking and mentoring platform</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="Images/achievements-bg.jpg" alt="Web Scraping Tool">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Scraping Tool</h3>
+                        <p class="project-desc">Automated data collection and processing utility</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BeautifulSoup</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <h2 class="section-title" style="margin-bottom: 2rem;">Let's Connect</h2>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="mailto:your-email@gmail.com">Email</a>
+                </div>
+                <p>&copy; 2026 Your Name. All rights reserved. | Crafted with <span style="color: #6ba3d4;">❤</span> and Code</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- THREE.JS SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
